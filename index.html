@@ -720,6 +720,25 @@ margin-bottom: 20px;
 
   <div class="container-fluid">
     <div class="row-fluid">
+      <div id="sidenav" class="span2">
+        <nav id="scrollingNav">
+          <ul class="sidenav nav nav-list">
+            <!-- Logo Area -->
+              <!--<div style="width: 80%; background-color: #4c8eca; color: white; padding: 20px; text-align: center; margin-bottom: 20px; ">
+
+              API Docs 2
+
+              </div>
+            -->
+            <li class="nav-fixed nav-header active" data-group="_"><a href="#api-_">API Summary</a></li>
+
+                  <li class="nav-header" data-group="Cep"><a href="#api-Cep">API Methods - Cep</a></li>
+                    <li data-group="Cep" data-name="cepCodigoPostalGet" class="">
+                      <a href="#api-Cep-cepCodigoPostalGet">cepCodigoPostalGet</a>
+                    </li>
+          </ul>
+        </nav>
+      </div>
       <div id="content">
         <div id="project">
           <div class="pull-left">
@@ -740,8 +759,15 @@ margin-bottom: 20px;
                   <h1>Cep</h1>
                     <div id="api-Cep-cepCodigoPostalGet">
                       <article id="api-Cep-cepCodigoPostalGet-0" data-group="User" data-name="cepCodigoPostalGet" data-version="0">
+                        <div class="pull-left">
+                          <h1>cepCodigoPostalGet</h1>
+                          <p>Consulta de endereço pelo CEP</p>
+                        </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
+                        <p></p>
+                        <p class="marked">Consulta de endereço pelo CEP</p>
+                        <p></p>
                         <br />
                         <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/cep/{codigo_postal}</span></code></pre>
                         <p>
@@ -1019,6 +1045,7 @@ except ApiException as e:
                                   <input id='responses-cepCodigoPostalGet-200-schema-data' type='hidden' value=''></input>
                                 </div>
                             </div>
+
                         </article>
                       </div>
                       <hr>
@@ -1026,8 +1053,8 @@ except ApiException as e:
           </div>
           <div id="footer">
             <div id="api-_footer">
-              <p>Sugestões, contato, suporte e relatório de erros;
-                  <div class="app-desc">Contact Info: <a href="mailto:desenvolvedor@objectdata.com.br">desenvolvedor@objectdata.com.br</a></div>
+              <p>Suggestions, contact, support and error reporting;
+                  <div class="app-desc">Contact Info: <a href="desenvolvedor@objectdata.com.br">desenvolvedor@objectdata.com.br</a></div>
               </p>
                 <div class="license-info">All rights reserved</div>
                 <div class="license-url">http://apache.org/licenses/LICENSE-2.0.html</div>
@@ -1035,7 +1062,7 @@ except ApiException as e:
           </div>
           <div id="generator">
             <div class="content">
-              Generated 2018-06-07T10:21:26.206Z
+              Generated 2018-06-07T11:19:43.679Z
             </div>
           </div>
       </div>
